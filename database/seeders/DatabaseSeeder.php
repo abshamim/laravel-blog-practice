@@ -21,5 +21,11 @@ class DatabaseSeeder extends Seeder
         $notunUser->email = 'me@me.me';
         $notunUser->password = bcrypt('password');
         $notunUser->save();
+
+        $notunUser = new User();
+        $notunUser->name = 'Fayjullah';
+        $notunUser->email = 'meee@me.me';
+        $notunUser->password = bcrypt('password');
+        $notunUser->save();
     }
 }
